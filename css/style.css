@@ -1,0 +1,75 @@
+body {
+    background: #603B26;
+}
+.card-main {
+    background: #F8F4E8;
+}
+.card-main .list-group-item,
+.card-main .card .card-body{
+    background: #f8f6f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab';
+}
+
+.badge-a {
+    background: red;
+}
+
+.badge-b {
+    background: red;
+}
+
+.badge-c {
+    background: red;
+}
+
+.badge-d {
+    background: red;
+}
+
+.badge-e {
+    background: red;
+}
+
+.badge-f {
+    background: red;
+}
+
+.badge-g {
+    background: red;
+}
+
+.badge-h {
+    background: red;
+}
+
+.badge-i {
+    background: red;
+}
+
+.badge-j {
+    background: red;
+}
+
+.badge-k {
+    background: red;
+}
+
+#canvas .score {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    color: #fff;
+    z-index: 100;
+}
+
+#canvas img {
+    left: 0;
+    top: 0;
+}
+
+#canvas canvas {
+    max-width: 100%;
+    height: auto;
