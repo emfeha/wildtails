@@ -9,72 +9,93 @@
     <title>Wildtails Atlas</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+
 
 </head>
 <body>
-
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Wildtails: A Pirate Legacy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="rules.html">Rules</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Campaign</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="prologue.html">Prologue</a></li>
-                        <li><a class="dropdown-item" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 2: Smuggling Routes</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 3: Golden Opportunity</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 4: Through the Blockade</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 5: Gnaw's Forces</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 6: British Espionage</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 7: Pierre's Wrath</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 8: Britain Attacks</a></li>
-                        <li><a class="dropdown-item" href="#">Chapter 9: Lords of Ratuga Bay</a></li>
-                        <li><a class="dropdown-item" href="#">Epilogue</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Wildtails: A Pirate Legacy</a>
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
 </nav>
 <main class="container py-5">
     <div class="row">
-        <div class="col-12 col-md-4 offset-md-4">
-            <img src="img/wildtails-logo.svg" alt="Wildtails" class="mb-4">
-        </div>
-        <div class="offset-md-3 col-12 col-md-6">
-            <p class="lead">In the early 19th century, a bustling outpost of seafaring vermin thrived in Ratuga Bay,
-                just off the coast of Louisiana. In this campaign you will command a growing operation of
-                smugglers-turned-pirates, build an empire from the ground up, and secure your legacy as a legend among
-                pirates.</p>
-            </p>
-        </div>
-        <div class="col-12 col-md-6 offset-md-3">
-            <h3>Campaign Overview</h3>
-            <p>This Campaign Book contains each chapter of the campaign’s story, as well as campaign-specific rules.
-                Read the Campaign Rules section first, then read the Legacy Campaign’s Prologue: 1983. After that, read
-                each new chapter only after it’s been unlocked.
-            </p>
-        </div>
-        <div class="col-12 col-md-6 offset-md-3">
-
-            <p>
-                <a href="rules.html" class="btn btn-primary">Campaign Rules</a>
-            </p>
+        <div class="col-12 col-sm-10 col-md-11 col-lg-8 mx-auto">
+            <div class="card card-main mb-4">
+                <div class="card-header"></div>
+                <div class="card-body px-5 pt-0 text-center">
+                    <img src="img/wildtails-logo.svg" alt="Wildtails" class="mb-4 w-50 mx-auto">
+                    <hr class="border border-secondary border-2 opacity-50">
+                    <h3>Campaign Overview</h3>
+                    <p>This Campaign Book contains each chapter of the campaign’s story, as well as campaign-specific
+                        rules.
+                        Read the Campaign Rules section first, then read the Legacy Campaign’s Prologue: 1983. After
+                        that, read
+                        each new chapter only after it’s been unlocked.
+                    </p>
+                    <hr class="border border-secondary border-2 opacity-50">
+                    <p>
+                        <a href="prologue.html" class="btn btn-lg btn-primary">Start Campaign</a>
+                    </p>
+                    <p>
+                        <a href="rules.html" class="btn btn-lg btn-primary">Campaign Rules</a>
+                    </p>
+                </div>
+                <div class="card-footer"></div>
+            </div>
         </div>
     </div>
 </main>
+<div class="col-12 col-md-4 offset-md-4">
+</div>
+<div class="offset-md-3 col-12 col-md-6">
+    <p class="lead"></p>
+    </p>
+</div>
+<div class="col-12 col-md-6 offset-md-3">
+</div>
+<div class="col-12 col-md-6 offset-md-3">
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="offcanvas text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action" href="index.html">Home</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+    </div>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Campaign</h5>
+    </div>
+    <div>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action active" href="chapter1.html">Chapter 1: Rauga Bay
+                Hideout</a>
+            <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
+            <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
+            <a class="list-group-item list-group-item-action active" href="chapter4.html">Chapter 4: Through the
+                Blockade</a>
+            <a class="list-group-item list-group-item-action" href="chapter5.html">Chapter 5: Gnaw's Forces</a>
+            <a class="list-group-item list-group-item-action" href="chapter6.html">Chapter 6: British Espionage</a>
+            <a class="list-group-item list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
+            <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
+            <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+        </div>
+    </div>
+</div>
 
 
 <script src="js/bootstrap.bundle.min.js"></script>

@@ -1,12 +1,45 @@
+
 body {
-    background: #603B26;
+    background: url("../img/bg.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 .card-main {
-    background: #F8F4E8;
+    --bs-card-bg: none;
+    --bs-card-border-color: none;
 }
-.card-main .list-group-item,
-.card-main .card .card-body{
-    background: #f8f6f0;
+
+.hero,
+.card-main > .card-body,
+.card-main .list-group-flush {
+    --bs-card-border-color: none;
+    background: url("../img/bg-paper.png") repeat-y center top;
+    background-size: 100% auto;
+}
+
+.card-main .card-header {
+    background: url("../img/bg-paper-top.png") no-repeat center top;
+    background-size: 100% auto;
+    border: none;
+    min-height: 40px;
+}
+
+.card-main .card-footer {
+    background: url("../img/bg-paper-bottom.png") no-repeat center bottom;
+    background-size: 100% auto;
+    border: none;
+    min-height: 40px;
+}
+.card-main .list-group,
+.card-main .card{
+    --bs-card-bg: #f3ede2;
+    --bs-card-border-color: #9b9393;
+}
+
+.card-main .card-body .list-group .list-group-item {
+    --bs-list-group-bg: #f3ede2;
+    --bs-list-group-border-color: #9b9393;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,3 +106,14 @@ h1, h2, h3, h4, h5, h6 {
 #canvas canvas {
     max-width: 100%;
     height: auto;
+}
+
+.btn-primary {
+    --bs-btn-bg: #1b4179;
+    --bs-btn-border-color: #1b4179;
+}
+
+.btn-danger {
+    --bs-btn-bg: #B55D46;
+    --bs-btn-border-color: #B55D46;
+}
