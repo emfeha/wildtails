@@ -1,191 +1,231 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wildtails Atlas">
-  <meta name="author" content="Button Shy">
-  <meta name="generator" content="Hugo 0.104.2">
-  <title>Wildttails Final Score</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wildtails Atlas">
+    <meta name="author" content="Button Shy">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Wildttails Final Score</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 
 </head>
 <body>
-
-<nav class="navbar navbar-expand-sm navbar-dark">
-<div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Wildtails: A Pirate Legacy</a>
-    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-            aria-controls="offcanvasMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
-<main class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md-6 offset-md-3">
-      <div class="card card-main mb-4">
-        <div class="card-header">
-          <h1 class="card-title">Final Scoring</h1>
-        </div>
-        <div class="card-body">
-          <p class="lead">Select defeats...</p>
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <div id="canvas" class="position-relative">
-                <div class="score">
-                  <h4>Score</h4>
-                  <h6 class="value">-</h6>
+<main class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/wildtails-logo-text.png" alt="Wildtails" height="24" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="btn px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                            aria-controls="offcanvasMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <img src="img/stronghold.png" alt="Stronghold" class="img-fluid position-relative">
-                <img src="img/b1a.png" alt="Dock" class="img-fluid position-absolute d-none dock dock-a">
-                <img src="img/b1b.png" alt="Dock" class="img-fluid position-absolute d-none dock dock-b">
-                <img src="img/b1c.png" alt="Dock" class="img-fluid position-absolute d-none dock dock-c">
-                <img src="img/b2a.png" alt="Warehouse" class="img-fluid position-absolute d-none warehouse warehouse-a">
-                <img src="img/b2b.png" alt="Warehouse" class="img-fluid position-absolute d-none warehouse warehouse-b">
-                <img src="img/b2c.png" alt="Warehouse" class="img-fluid position-absolute d-none warehouse warehouse-c">
-                <img src="img/b3a.png" alt="Tavern" class="img-fluid position-absolute d-none tavern tavern-a">
-                <img src="img/b3b.png" alt="Tavern" class="img-fluid position-absolute d-none tavern tavern-b">
-                <img src="img/b3c.png" alt="Tavern" class="img-fluid position-absolute d-none tavern tavern-c">
-                <img src="img/b4a.png" alt="Tower" class="img-fluid position-absolute d-none tower tower-a">
-                <img src="img/b4b.png" alt="Tower" class="img-fluid position-absolute d-none tower tower-b">
-                <img src="img/b4c.png" alt="Tower" class="img-fluid position-absolute d-none tower tower-c">
-                <img src="img/fa.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-a">
-                <img src="img/fb.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-b">
-              </div>
+            </nav>
+        </div>
+        <div class="col-12">
+            <div class="card card-main mb-4">
+                <div class="card-header"></div>
+                <div class="card-body px-5 pt-0">
+                    <h1 class="card-title">Final Scoring</h1>
+                    <p class="lead">Congratulations on completing the campaign! Please log your defeats and your alignment to calclulate your final score and to be able to share your stronghold.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-7 mb-4">
+                            <div id="canvas" class="position-relative">
+                                <div class="score px-4 pb-3 position-absolute bottom-0 start-0" style="z-index: 100">
+                                    <h6 class="mb-0">Score</h6>
+                                    <h4 class="value">-</h4>
+                                </div>
+                                <img src="img/scoring.png" alt="Stronghold" class="img-fluid position-relative">
+                                <img src="img/d1.png" alt="Dock"
+                                     class="img-fluid position-absolute d-none dock dock-a">
+                                <img src="img/d2.png" alt="Dock"
+                                     class="img-fluid position-absolute dock dock-b">
+                                <img src="img/d3.png" alt="Dock"
+                                     class="img-fluid position-absolute d-none dock dock-c">
+                                <img src="img/h1.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-a">
+                                <img src="img/h2.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-b">
+                                <img src="img/h3.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-c">
+                                <img src="img/f1.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-a">
+                                <img src="img/f2.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-b">
+                                <img src="img/f3.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-c">
+                                <img src="img/k1.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-a">
+                                <img src="img/k2.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-b">
+                                <img src="img/k3.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-c">
+                                <img src="img/i1.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-a">
+                                <img src="img/i2.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-b">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <h4>Defeats</h4>
+                            <div class="accordion mb-4" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Scenario 1-3 Defeats
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="dock" id="dock-a" autocomplete="off" data-id="dock-a" data-score="5">
+                                                <label class="btn btn-outline-primary" for="dock-a">0-1</label>
+
+                                                <input type="radio" class="btn-check" name="dock" id="dock-b" autocomplete="off" data-id="dock-b" data-score="4">
+                                                <label class="btn btn-outline-primary" for="dock-b">2</label>
+
+                                                <input type="radio" class="btn-check" name="dock" id="dock-c" autocomplete="off" data-id="dock-c" data-score="3">
+                                                <label class="btn btn-outline-primary" for="dock-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Scenario 4-5 Defeats
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="tavern" id="tavern-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="tavern-a">0-1</label>
+
+                                                <input type="radio" class="btn-check" name="tavern" id="tavern-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="tavern-b">2</label>
+
+                                                <input type="radio" class="btn-check" name="tavern" id="tavern-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="tavern-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Scenario 6-7 Defeats
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="warehouse" id="warehouse-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="warehouse-a">0-1</label>
+
+                                                <input type="radio" class="btn-check" name="warehouse" id="warehouse-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="warehouse-b">2</label>
+
+                                                <input type="radio" class="btn-check" name="warehouse" id="warehouse-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="warehouse-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Scenario 8-9 Defeats
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="tower" id="tower-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="tower-a">0-1</label>
+
+                                                <input type="radio" class="btn-check" name="tower" id="tower-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="tower-b">2</label>
+
+                                                <input type="radio" class="btn-check" name="tower" id="tower-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="tower-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Epilogue</h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    Choose your alignment
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="flag" id="flag-a" autocomplete="off" data-score="0">
+                                        <label class="btn btn-outline-primary" for="flag-a">America</label>
+
+                                        <input type="radio" class="btn-check" name="flag" id="flag-b" autocomplete="off" data-score="0">
+                                        <label class="btn btn-outline-primary" for="flag-b">Britain</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button id="download" class="btn btn-lg btn-primary">Download</button>
+                                <button class="btn btn-lg btn-outline-primary">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
             </div>
-            <div class="col-12 col-md-5">
-              <div class="row">
-
-                <div class="col-12">
-                  <h2>Defeats</h2>
-                </div>
-                <div class="col-12 mt-2">
-                  <h4>Scenario 1-3</h4>
-                  <p><strong>Building:</strong> Docks</p>
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="dock" id="dock-n" autocomplete="off" checked data-score="0">
-                    <label class="btn btn-outline-secondary" for="dock-n">Reset</label>
-                    <input type="radio" class="btn-check" name="dock" id="dock-a" autocomplete="off" data-id="dock-a" data-score="5">
-                    <label class="btn btn-outline-secondary" for="dock-a">0-1</label>
-
-                    <input type="radio" class="btn-check" name="dock" id="dock-b" autocomplete="off" data-id="dock-b" data-score="4">
-                    <label class="btn btn-outline-secondary" for="dock-b">2</label>
-
-                    <input type="radio" class="btn-check" name="dock" id="dock-c" autocomplete="off" data-id="dock-c" data-score="3">
-                    <label class="btn btn-outline-secondary" for="dock-c">3+</label>
-                  </div>
-                </div>
-                <div class="col-12 mt-2">
-                  <h4>Scenario 4-5</h4>
-                  <p><strong>Building:</strong> Tavern</p>
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="tavern" id="tavern-n" autocomplete="off" checked data-score="0">
-                    <label class="btn btn-outline-secondary" for="tavern-n">Reset</label>
-                    <input type="radio" class="btn-check" name="tavern" id="tavern-a" autocomplete="off" data-score="5">
-                    <label class="btn btn-outline-secondary" for="tavern-a">0-1</label>
-
-                    <input type="radio" class="btn-check" name="tavern" id="tavern-b" autocomplete="off" data-score="4">
-                    <label class="btn btn-outline-secondary" for="tavern-b">2</label>
-
-                    <input type="radio" class="btn-check" name="tavern" id="tavern-c" autocomplete="off" data-score="3">
-                    <label class="btn btn-outline-secondary" for="tavern-c">3+</label>
-                  </div>
-                </div>
-                <div class="col-12 mt-2">
-                  <h4>Scenario 6-7</h4>
-                  <p><strong>Building:</strong> Warehouse</p>
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="warehouse" id="warehouse-n" autocomplete="off" checked data-score="0">
-                    <label class="btn btn-outline-secondary" for="warehouse-n">Reset</label>
-                    <input type="radio" class="btn-check" name="warehouse" id="warehouse-a" autocomplete="off" data-score="5">
-                    <label class="btn btn-outline-secondary" for="warehouse-a">0-1</label>
-
-                    <input type="radio" class="btn-check" name="warehouse" id="warehouse-b" autocomplete="off" data-score="4">
-                    <label class="btn btn-outline-secondary" for="warehouse-b">2</label>
-
-                    <input type="radio" class="btn-check" name="warehouse" id="warehouse-c" autocomplete="off" data-score="3">
-                    <label class="btn btn-outline-secondary" for="warehouse-c">3+</label>
-                  </div>
-                </div>
-                <div class="col-12 mt-2">
-                  <h4>Scenario 8-9</h4>
-                  <p><strong>Building:</strong> Fortress</p>
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="tower" id="tower-n" autocomplete="off" checked data-score="0">
-                    <label class="btn btn-outline-secondary" for="tower-n">Reset</label>
-                    <input type="radio" class="btn-check" name="tower" id="tower-a" autocomplete="off" data-score="5">
-                    <label class="btn btn-outline-secondary" for="tower-a">0-1</label>
-
-                    <input type="radio" class="btn-check" name="tower" id="tower-b" autocomplete="off" data-score="4">
-                    <label class="btn btn-outline-secondary" for="tower-b">2</label>
-
-                    <input type="radio" class="btn-check" name="tower" id="tower-c" autocomplete="off" data-score="3">
-                    <label class="btn btn-outline-secondary" for="tower-c">3+</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 mt-4">
-                  <h2>Epilogue</h2>
-                  <p>Select the correct option based on who you allied with:</p>
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="flag" id="flag-n" autocomplete="off" checked data-score="0">
-                    <label class="btn btn-outline-secondary" for="flag-n">Reset</label>
-                    <input type="radio" class="btn-check" name="flag" id="flag-a" autocomplete="off" data-score="0">
-                    <label class="btn btn-outline-secondary" for="flag-a">UK</label>
-
-                    <input type="radio" class="btn-check" name="flag" id="flag-b" autocomplete="off" data-score="0">
-                    <label class="btn btn-outline-secondary" for="flag-b">US</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="text-center pt-4">
-          <p>You can download and share the image</p>
-          <button id="download" class="btn btn-secondary">Download</button>
-        </div>
-      </div>
     </div>
-  </div>
 </main>
 <div class="offcanvas text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="list-group">
-    <a class="list-group-item list-group-item-action" href="index.html">Home</a>
-    <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
-  </div>
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Campaign</h5>
-  </div>
-  <div>
-    <div class="list-group">
-      <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
-      <a class="list-group-item list-group-item-action active" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a>
-      <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
-      <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
-      <a class="list-group-item list-group-item-action active" href="chapter4.html">Chapter 4: Through the Blockade</a>
-      <a class="list-group-item list-group-item-action" href="chapter5.html">Chapter 5: Gnaw's Forces</a>
-      <a class="list-group-item list-group-item-action" href="chapter6.html">Chapter 6: British Espionage</a>
-      <a class="list-group-item list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
-      <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
-      <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-  </div>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action" href="index.html">Home</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+    </div>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Campaign</h5>
+    </div>
+    <div>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay
+                Hideout</a>
+            <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
+            <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
+            <a class="list-group-item list-group-item-action" href="chapter4.html">Chapter 4: Through the
+                Blockade</a>
+            <a class="list-group-item list-group-item-action" href="chapter5.html">Chapter 5: Gnaw's Forces</a>
+            <a class="list-group-item list-group-item-action" href="chapter6.html">Chapter 6: British Espionage</a>
+            <a class="list-group-item list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
+            <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
+            <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+        </div>
+    </div>
 </div>
 
-
+<script
+        src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+        crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
