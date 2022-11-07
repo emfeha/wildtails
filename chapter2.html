@@ -36,10 +36,7 @@
                 <div class="card-body px-5 pt-0">
                     <h5 class="card-subtitle mt-2">Chapter 2</h5>
                     <h1 class="card-title">Smuggling Routes</h1>
-                    <p class="lead mb-4">The Lafayettes waste no time in dropping by your new base of operations. They
-                        discuss the various locations where their contraband is hidden away, ready to be snuck into the
-                        city. It’s clear you are going to need more crew right away to help clear out the American
-                        forces who are patrolling the backwater smuggling routes.
+                    <p class="lead mb-4">The Lafayettes waste no time in dropping by your new base of operations. They discuss the various locations where their contraband is hidden away, ready to be snuck into the city. It’s clear you are going to need more crew right away to help clear out the American forces who are patrolling the backwater smuggling routes.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Scenario 2 Setup</h4>
@@ -86,21 +83,23 @@
                         Victory
                     </button>
 
-                    <button class="btn btn-lg btn-danger" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#defeat" aria-expanded="false" aria-controls="defeat">Defeat
-                        </button>
+
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#defeatsModal">
+                        Defeat
+                    </button>
                 </div>
                 <div class="card-body collapse unlocks px-5 pt-0">
                     <h4>Update Campaign Log</h4>
                     <p>Fill in...</p>
-                    <p>[ chapter 1 img]</p>
+                    <img src="img/CampaignProgress2.png" alt="Campaign 2" class="img-fluid"/>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Chapter 2 Unlocks</h4>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>New Abilities</h5>
+                            <h5><i class="icon i-check mt-1"></i> New Abilities</h5>
                             <p>One <span class="badge badge-b">B</span> ability slot is now unlocked for <span class="text-nowrap"><i class="icon i-character"></i> <strong>SAMUEL</strong></span> and <span class="text-nowrap"><i class="icon i-character"></i> <strong>ANNA</strong></span>. Choose one <span class="badge badge-b1">B1</span> ability per
-                                character, cut out the sticker, and place it on that character’s <span class="badge badge-b">B</span> slot. Keep all unused stickers with the sticker sheet.</p>
+                                character and place it on that character’s <span class="badge badge-b">B</span> slot. Keep all unused stickers with the sticker sheet.</p>
                         </li>
                     </ul>
                     <div class="text-center pt-4">
@@ -113,16 +112,6 @@
                 </div>
                 <div class="card-footer"></div>
             </div>
-            <div class="card card-main collapse mb-4" id="defeat">
-                <div class="card-header"></div>
-                <div class="card-body px-5 pt-0">
-                    <h3>Defeat</h3>
-                    <p>Don't forget to log your defeats and then try again!</p>
-                    <img src="img/campaign-log.png" alt="Campaign Log" class="img-fluid"/>
-                </div>
-                <div class="card-footer">
-                </div>
-            </div>
         </div>
     </div>
 </main>
@@ -133,14 +122,14 @@
     </div>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="index.html">Home</a>
-        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Campaign Rules</a>
     </div>
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Campaign</h5>
     </div>
     <div>
         <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue: 1813</a>
             <a class="list-group-item list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay
                 Hideout</a>
             <a class="list-group-item list-group-item-action active" href="chapter2.html">Chapter 2: Smuggling
@@ -153,6 +142,23 @@
             <a class="list-group-item list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
             <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
             <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="defeatsModal" tabindex="-1" aria-labelledby="defeatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Defeated</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Log your defeat, then try again!</p>
+                <img src="img/Defeats1-3.png" alt="Defeats: 1-3" class="img-fluid"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Retry Scenario</button>
+            </div>
         </div>
     </div>
 </div>

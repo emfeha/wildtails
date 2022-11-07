@@ -36,12 +36,7 @@
                 <div class="card-body px-5 pt-0">
                     <h5 class="card-subtitle mt-2">Chapter 7</h5>
                     <h1 class="card-title">Pierre’s Wrath</h1>
-                    <p class="lead mb-4">Trouble brews in Ratuga Bay. Still holding a grudge over the captured ship,
-                        Pierre Lafayette has gathered a force of mercenaries and raiders and they are sailing towards
-                        you. A battle is inevitable, but you have a secret weapon: through your American patron, you
-                        hear that one of Pierre’s freshly-hired captains has been complaining about their miserable pay.
-                        With a small bribe and a letter of support, you may be able to recruit their services during the
-                        fight.
+                    <p class="lead mb-4">Trouble brews in Ratuga Bay. Still holding a grudge over the captured ship, Pierre Lafayette has gathered a force of mercenaries and raiders and they are sailing towards you. A battle is inevitable, but you have a secret weapon: through your American patron, you hear that one of Pierre’s freshly-hired captains has been complaining about their miserable pay. With a small bribe and a letter of support, you may be able to recruit their services during the fight.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Scenario 7 Setup</h4>
@@ -85,53 +80,52 @@
                     <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="collapse"
                             data-bs-target=".unlocks" aria-expanded="false" aria-controls="unlocks">Victory
                     </button>
-                    <button class="btn btn-lg btn-danger" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#defeat" aria-expanded="false" aria-controls="defeat">Defeat
-                    </button>
+
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#defeatsModal">
+                            Defeat
+                        </button>
                 </div>
                 <div class="card-body collapse unlocks px-5 pt-0">
                     <h2>Homeland Calls</h2>
-                    <p>The fight is over. Your crews search the wreckage and find no sign of Pierre. Whether he escaped
-                        or not, it’s only a matter of time before Jean knows what’s happened. Worse, your American
-                        partner has sent word that the British attack is imminent. Their message urges you to think on
-                        the profitability that working together will have once the British are defeated. It concludes
-                        with a call to defend your homeland, regardless of your current petty squabbles with the
-                        Lafayettes.
+                    <p>The fight is over. Your crews search the wreckage and find no sign of Pierre. Whether he escaped or not, it’s only a matter of time before Jean knows what’s happened. Worse, your American partner has sent word that the British attack is imminent. Their message urges you to think on the profitability that working together will have once the British are defeated. It concludes with a call to defend your homeland, regardless of your current petty squabbles with the Lafayettes.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Update Campaign Log</h4>
                     <p>Fill in...</p>
-                    <p>[ chapter 1 img]</p>
+                    <img src="img/CampaignProgress7.png" alt="Campaign 7" class="img-fluid"/>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Chapter 7 Unlocks</h4>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>New Abilities</h5>
+                            <h5><i class="icon i-check mt-1"></i> New Abilities</h5>
                             <p> In addition to the <span class="badge badge-b1">B1</span> and <span class="badge badge-b2">B2</span> abilities, all of the <span class="badge badge-b3">B3</span> ability stickers are now available to be placed. Choose four of these and place one ability sticker on each remaining <i class="icon i-character"></i> <span class="badge badge-b">B</span> slot.
                             </p>
+                            <img src="img/S1-B1B2.png" alt="B" class="img-fluid"  width="150"/>
+                            <img src="img/S2-B3.png" alt="B" class="img-fluid"  width="150"/>
                         </li>
                         <li class="list-group-item">
-                            <h5>New Building</h5>
+                            <h5><i class="icon i-check mt-1"></i> New Building</h5>
                             <p><strong>WAREHOUSE</strong>. Check how many defeats you have recorded from Scenarios 6-7, then refer to the
                                 following table to determine which sticker you gain. Place that sticker on the <span class="badge badge-h">H</span> slot of your <i class="icon i-stronghold"></i>.
-
                             </p>
                             <table class="table table-striped">
                                 <tbody>
                                 <tr>
                                     <th>Defeats</th>
-                                    <td>0-1</td>
-                                    <td>2</td>
-                                    <td>3+</td>
+                                    <td class="text-center">0-1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3+</td>
                                 </tr>
                                 <tr>
                                     <th>Sticker</th>
-                                    <td><span class="badge badge-h">H1</span></td>
-                                    <td><span class="badge badge-h">H2</span></td>
-                                    <td><span class="badge badge-h">H3</span></td>
+                                    <td class="text-center"><span class="badge badge-h">H1</span></td>
+                                    <td class="text-center"><span class="badge badge-h">H2</span></td>
+                                    <td class="text-center"><span class="badge badge-h">H3</span></td>
                                 </tr>
                                 </tbody>
                             </table>
+                            <img src="img/S2-H.png" alt="H" class="img-fluid"  width="150"/>
                         </li>
                     </ul>
                     <div class="text-center pt-4">
@@ -144,16 +138,6 @@
                 </div>
                 <div class="card-footer"></div>
             </div>
-            <div class="card card-main collapse mb-4" id="defeat">
-                <div class="card-header"></div>
-                <div class="card-body px-5 pt-0">
-                    <h3>Defeat</h3>
-                    <p>Don't forget to log your defeats and then try again!</p>
-                    <img src="img/campaign-log.png" alt="Campaign Log" class="img-fluid"/>
-                </div>
-                <div class="card-footer">
-                </div>
-            </div>
         </div>
     </div>
 </main>
@@ -164,14 +148,14 @@
     </div>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="index.html">Home</a>
-        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Campaign Rules</a>
     </div>
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Campaign</h5>
     </div>
     <div>
         <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue: 1813</a>
             <a class="list-group-item list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a>
             <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
             <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
@@ -181,6 +165,23 @@
             <a class="list-group-item list-group-item-action active" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
             <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
             <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="defeatsModal" tabindex="-1" aria-labelledby="defeatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Defeated</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Log your defeat, then try again!</p>
+                <img src="img/Defeats6-7.png" alt="Defeats: 6-7" class="img-fluid"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Retry Scenario</button>
+            </div>
         </div>
     </div>
 </div>

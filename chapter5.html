@@ -36,16 +36,9 @@
                 <div class="card-body px-5 pt-0">
                     <h5 class="card-subtitle mt-2">Chapter 5</h5>
                     <h1 class="card-title">Gnaw's Forces</h1>
-                    <p class="lead">It only takes one match to light the powderkeg. A British attack has decimated
-                        a squadron of American ships, causing Commodore Gnaw to escalate the US presence. The American
-                        Forces under Gnaw aggressively patrol the entire Gulf and many pirate crews have gone to ground
-                        rather than contend with them.</p>
-                    <p class="lead mb-4">
-                        Yet something promising lies on the horizon. Your scouts report that a single US ship survived
-                        the attack and is carrying its valuable cargo of munitions south along the coast. You
-                        immediately send your crew after it, before it can get away. Only afterwards do you hear that an
-                        unidentified pirate ship is also closing in on your target…
-
+                    <p class="lead">It only takes one match to light the powderkeg. A British attack has decimated a squadron of American ships, causing Commodore Gnaw to escalate the US presence. The American Forces under Gnaw aggressively patrol the entire Gulf and many pirate crews have gone to ground rather than contend with them.
+                    </p>
+                    <p class="lead mb-4">Yet something promising lies on the horizon. Your scouts report that a single US ship survived the attack and is carrying its valuable cargo of munitions south along the coast. You immediately send your crew after it, before it can get away. Only afterwards do you hear that an unidentified pirate ship is also closing in on your target…
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Scenario 5 Setup</h4>
@@ -89,42 +82,42 @@
                     <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="collapse"
                             data-bs-target=".unlocks" aria-expanded="false" aria-controls="unlocks">Victory
                     </button>
-                    <button class="btn btn-lg btn-danger" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#defeat" aria-expanded="false" aria-controls="defeat">Defeat
-                    </button>
+
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#defeatsModal">
+                            Defeat
+                        </button>
                 </div>
                 <div class="card-body collapse unlocks px-5 pt-0">
                     <h3>Bad News</h3>
-                    <p>Your captain returns with the captured vessel in tow, but bearing bad news: the unidentified
-                        pirate ship belonged to one of the Lafayettes’ trusted lieutenants. Your crew fired warning
-                        shots to turn the lieutenant away, though it’s only a matter of time before the Lafayettes get
-                        the report. And they won’t be happy.
+                    <p>Your captain returns with the captured vessel in tow, but bearing bad news: the unidentified pirate ship belonged to one of the Lafayettes’ trusted lieutenants. Your crew fired warning shots to turn the lieutenant away, though it’s only a matter of time before the Lafayettes get the report. And they won’t be happy.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Update Campaign Log</h4>
                     <p>Fill in...</p>
-                    <p>[ chapter 1 img]</p>
+                    <img src="img/CampaignProgress5.png" alt="Campaign 5" class="img-fluid"/>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Chapter 5 Unlocks</h4>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>New Building</h5>
+                            <h5><i class="icon i-check mt-1"></i> New Building</h5>
                             <p><strong>TAVERN</strong>. Check how many defeats you have recorded from Scenarios 4-5, then refer to the
                                 following table to determine which sticker you gain. Place that sticker on the <span class="badge badge-f">F</span> slot of your <i class="icon i-stronghold"></i>.
+                                <img src="img/S1-F.png" alt="F" class="img-fluid"  width="150"/>
                             </p>
                             <table class="table table-striped">
                                 <tbody>
                                 <tr>
                                     <th>Defeats</th>
-                                    <td>0-1</td>
-                                    <td>2</td>
-                                    <td>3+</td>
+                                    <td class="text-center">0-1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3+</td>
                                 </tr>
                                 <tr>
                                     <th>Sticker</th>
-                                    <td><span class="badge badge-f">F1</span></td>
-                                    <td><span class="badge badge-f">F2</span></td>
-                                    <td><span class="badge badge-f">F3</span></td>
+                                    <td class="text-center"><span class="badge badge-f">F1</span></td>
+                                    <td class="text-center"><span class="badge badge-f">F2</span></td>
+                                    <td class="text-center"><span class="badge badge-f">F3</span></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -159,14 +152,14 @@
     </div>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="index.html">Home</a>
-        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Campaign Rules</a>
     </div>
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Campaign</h5>
     </div>
     <div>
         <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue: 1813</a>
             <a class="list-group-item list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a>
             <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
             <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
@@ -176,6 +169,23 @@
             <a class="list-group-item list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
             <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
             <a class="list-group-item list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="defeatsModal" tabindex="-1" aria-labelledby="defeatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Defeated</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Log your defeat, then try again!</p>
+                <img src="img/Defeats4-5.png" alt="Defeats: 4-5" class="img-fluid"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Retry Scenario</button>
+            </div>
         </div>
     </div>
 </div>

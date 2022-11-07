@@ -12,9 +12,8 @@ $(document).ready(function () {
         let total = 0,
             rank = "Smuggler";
 
-        $('input[type=radio]').each(function(){
+        $('input.defeats[type=radio]').each(function(){
             if($(this).prop('checked') === true) {
-                console.log($(this).data('score'));
                 total += $(this).data('score');
             }
         });

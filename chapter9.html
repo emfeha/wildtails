@@ -36,13 +36,9 @@
                 <div class="card-body px-5 pt-0">
                     <h5 class="card-subtitle mt-2">Chapter 9</h5>
                     <h1 class="card-title">Lords of Ratuga Bay</h1>
-                    <p class="lead">The battle of New L’Oreans storms around you. In the midst of the chaos, Jean
-                        Lafeyette turns his ships to face yours. It’s clear that you are his enemy now, a rival for
-                        control of Ratuga Bay. There is no longer any hope for a truce.
+                    <p class="lead">The battle of New L’Oreans storms around you. In the midst of the chaos, Jean Lafeyette turns his ships to face yours.  It’s clear that you are his enemy now, a rival for control of Ratuga Bay. There is no longer any hope for a truce.
                     </p>
-                    <p class="lead mb-4">On the outskirts of the battle, with Jean on your tail, you quickly sail back to Ratuga Bay to
-                        plunder any undefended treasure and prepare a counterattack. The war for control of Ratuga
-                        begins.
+                    <p class="lead mb-4">With Jean on your tail, you race back to Ratuga Bay to plunder any undefended treasure and prepare a counterattack. Your allies will have to finish the fight for New L’Oreans on their own. The war for Ratuga Bay begins.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Scenario 9 Setup</h4>
@@ -87,19 +83,21 @@
                             data-bs-target=".unlocks" aria-expanded="false" aria-controls="unlocks">
                         Victory
                     </button>
-                    <button class="btn btn-lg btn-danger" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#defeat" aria-expanded="false" aria-controls="defeat">Defeat
-                    </button>
+
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#defeatsModal">
+                            Defeat
+                        </button>
                 </div>
                 <div class="card-body collapse unlocks px-5 pt-0">
                     <h4>Update Campaign Log</h4>
                     <p>Fill in...</p>
-                    <p>[ chapter 1 img]</p>
+                    <img src="img/CampaignProgress9.png" alt="Campaign 9" class="img-fluid"/>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Chapter 9 Unlocks</h4>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>New Building</h5>
+                            <h5><i class="icon i-check mt-1"></i> New Building</h5>
                             <p><strong>FORTRESS</strong>. Check how many defeats you have recorded from Scenarios 8-9, then refer to the
                                 following table to determine which sticker you gain. Place that sticker on the <span class="badge badge-k">K</span> slot of your <i class="icon i-stronghold"></i>.
                             </p>
@@ -107,18 +105,19 @@
                                 <tbody>
                                 <tr>
                                     <th>Defeats</th>
-                                    <td>0-1</td>
-                                    <td>2</td>
-                                    <td>3+</td>
+                                    <td class="text-center">0-1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3+</td>
                                 </tr>
                                 <tr>
                                     <th>Sticker</th>
-                                    <td><span class="badge badge-k">K1</span></td>
-                                    <td><span class="badge badge-k">K2</span></td>
-                                    <td><span class="badge badge-k">K3</span></td>
+                                    <td class="text-center"><span class="badge badge-k">K1</span></td>
+                                    <td class="text-center"><span class="badge badge-k">K2</span></td>
+                                    <td class="text-center"><span class="badge badge-k">K3</span></td>
                                 </tr>
                                 </tbody>
                             </table>
+                            <img src="img/S2-K.png" alt="K" class="img-fluid"  width="150"/>
                         </li>
                     </ul>
                     <div class="text-center pt-4">
@@ -152,16 +151,6 @@
                 </div>
                 <div class="card-footer"></div>
             </div>
-            <div class="card card-main collapse mb-4" id="defeat">
-                <div class="card-header"></div>
-                <div class="card-body px-5 pt-0">
-                    <h3>Defeat</h3>
-                    <p>Don't forget to log your defeats and then try again!</p>
-                    <img src="img/campaign-log.png" alt="Campaign Log" class="img-fluid"/>
-                </div>
-                <div class="card-footer">
-                </div>
-            </div>
         </div>
     </div>
 </main>
@@ -172,14 +161,14 @@
     </div>
     <div class="list-group">
         <a class="list-group-item list-group-item-action" href="index.html">Home</a>
-        <a class="list-group-item list-group-item-action" href="rules.html">Rules</a>
+        <a class="list-group-item list-group-item-action" href="rules.html">Campaign Rules</a>
     </div>
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Campaign</h5>
     </div>
     <div>
         <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue</a>
+            <a class="list-group-item list-group-item-action" href="prologue.html">Prologue: 1813</a>
             <a class="list-group-item list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a>
             <a class="list-group-item list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
             <a class="list-group-item list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
@@ -190,6 +179,23 @@
             <a class="list-group-item list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
             <a class="list-group-item list-group-item-action active" href="chapter9.html">Chapter 9: Lords of Ratuga
                 Bay</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="defeatsModal" tabindex="-1" aria-labelledby="defeatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Defeated</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Log your defeat, then try again!</p>
+                <img src="img/Defeats8-9.png" alt="Defeats: 8-9" class="img-fluid"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Retry Scenario</button>
+            </div>
         </div>
     </div>
 </div>
