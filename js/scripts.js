@@ -2,7 +2,14 @@ $(document).ready(function () {
     var element = $("#html-content-holder"); // global variable
     var getCanvas; // global variable
 
-    $('input[type=radio]').on('click', function () {
+    $('.toggle-asset').on('click', function () {
+        console.log($(this).attr('name'));
+        console.log($(this).data('class'));
+        $('.'+$(this).attr('name')).removeClass('d-none d-block')
+            .addClass($(this).data('class'));
+    });
+
+    $('.defeats').on('click', function () {
         $('.'+$(this).attr('name')).addClass('d-none');
         $('.'+$(this).attr('id')).removeClass('d-none');
         calcScore()
