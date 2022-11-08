@@ -39,11 +39,12 @@
                     <div class="row">
                         <div class="col-12 col-md-7 mb-4">
                             <div id="canvas" class="position-relative">
-                                <div class="score px-4 pb-3 position-absolute bottom-0 start-0" style="z-index: 100">
+                                <div class="score px-4 pb-3 position-absolute bottom-0 start-0 d-none" style="z-index: 100">
                                     <h6 class="mb-0">Score</h6>
                                     <h4 class="value">-</h4>
                                 </div>
                                 <img src="img/scoring.png" alt="Stronghold" class="img-fluid position-relative">
+                                <img src="img/wildtails-logo.png" alt="Wildtails" class="img-fluid position-absolute logo d-none">
                                 <img src="img/d1.png" alt="Dock"
                                      class="img-fluid position-absolute d-none dock dock-a">
                                 <img src="img/d2.png" alt="Dock"
@@ -168,10 +169,10 @@
                                         <div class="accordion-body">
 
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="flag" id="flag-a" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check defeats" name="flag" id="flag-a" autocomplete="off" data-score="0">
                                                 <label class="btn btn-outline-primary" for="flag-a">America</label>
 
-                                                <input type="radio" class="btn-check" name="flag" id="flag-b" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check defeats" name="flag" id="flag-b" autocomplete="off" data-score="0">
                                                 <label class="btn btn-outline-primary" for="flag-b">Britain</label>
                                             </div>
 
@@ -188,10 +189,10 @@
                                         <div class="accordion-body">
 
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="logo" id="logo-a" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check toggle-asset" name="logo" id="logo-a" autocomplete="off" data-class="d-block">
                                                 <label class="btn btn-outline-primary" for="logo-a">Yes</label>
 
-                                                <input type="radio" class="btn-check" name="logo" id="logo-b" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check toggle-asset" name="logo" id="logo-b" autocomplete="off" data-class="d-none" checked>
                                                 <label class="btn btn-outline-primary" for="logo-b">No</label>
                                             </div>
                                         </div>
@@ -207,10 +208,10 @@
                                         <div class="accordion-body">
 
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="score" id="score-a" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check toggle-asset" name="score" id="score-a" autocomplete="off" data-class="d-block">
                                                 <label class="btn btn-outline-primary" for="score-a">Yes</label>
 
-                                                <input type="radio" class="btn-check" name="score" id="score-b" autocomplete="off" data-score="0">
+                                                <input type="radio" class="btn-check toggle-asset" name="score" id="score-b" autocomplete="off" data-class="d-none" checked>
                                                 <label class="btn btn-outline-primary" for="score-b">No</label>
                                             </div>
                                         </div>
