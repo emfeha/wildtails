@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-b3 {
-    background: #f44063;
+    background: #00A3D1;
 }
 
 .badge-c {
@@ -118,6 +118,17 @@ h1, h2, h3, h4, h5, h6 {
     background: #a61c00;
 }
 
+.badge-rules {
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid #fff;
+    height: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 20px;
+}
+
 #canvas .score {
     color: #fff;
 }
@@ -125,6 +136,12 @@ h1, h2, h3, h4, h5, h6 {
 #canvas img {
     left: 0;
     top: 0;
+}
+
+#canvas .logo {
+    left: 5%;
+    top: 5%;
+    width: 35%;
 }
 
 #canvas canvas {
