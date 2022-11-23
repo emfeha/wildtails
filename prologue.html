@@ -19,13 +19,18 @@
     <div class="row">
         <div class="col-12 col-sm-10 col-md-11 col-lg-8 mx-auto">
             <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/wildtails-logo-text.png" alt="Wildtails" height="24" class="d-inline-block align-text-top">
+                <div class="container-fluid pe-0">
+                    <a class="navbar-brand me-auto" href="index.html">
+                        <img src="img/wildtails-logo-text.png" alt="Wildtails" height="24"
+                             class="d-inline-block align-text-top">
                     </a>
-                    <button class="btn px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#referenceMenu"
+                            aria-controls="referenceMenu">
+                        <i class="icon i-help"></i>
+                    </button>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
                             aria-controls="offcanvasMenu">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="icon i-bars"></i>
                     </button>
                 </div>
             </nav>
@@ -57,14 +62,14 @@
                     <ul class="list-group">
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Characters</h5>
-                            <p>You now have two playable characters; Unlock <span class="text-nowrap"><i class="icon i-character"></i><strong>SAMUEL</strong></span> and <span class="text-nowrap"><i class="icon i-character"></i><strong>ANNA</strong></span>.
+                            <p>You have two new playable characters. Unlock <span class="text-nowrap"><i class="icon i-character"></i><strong>SAMUEL</strong></span> and <span class="text-nowrap"><i class="icon i-character"></i><strong>ANNA</strong></span>.
                             </p>
                             <img src="img/character1.png" alt="Anna" class="img-fluid" width="150"/>
                             <img src="img/character2.png" alt="Samuel" class="img-fluid" width="150"/>
                         </li>
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Card</h5>
-                            <p>You now have an <strong>EMPIRE</strong> Card. Unlock the <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> side of the Empire card.</p>
+                            <p>You have a new <strong>EMPIRE</strong> Card. Unlock the <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> side of the Empire card.</p>
                             <img src="img/stronghold.png" alt="Stronghold" class="img-fluid" width="150"/>
                         </li>
                     </ul>
@@ -106,6 +111,149 @@
             <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter8.html">Chapter 8: Britain Attacks</a>
             <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
         </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="referenceMenu" aria-labelledby="referenceLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="referenceLabel">Ability Reference</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pb-0">
+        <h6>Character Abilities</h6>
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Any Resource to take any amount of stored Resource cards from your Empire.</p>
+                    <p><strong>Restriction:</strong> Only the player who uses this ability may take the cards.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability2.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Coin to give the active player +2 to a skill check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 1 per turn.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability3.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Sword to give the active player +2 to a skill check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 1 per turn.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability4.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>For each "Any Resource" spent the active player gains +1 to a single Skill Check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 2 per turn.</small></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability5.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Each Coin you have may be spent as a Gem.</p>
+                    <p><strong>Restriction:</strong> May only be used during Rounds 1-2. Only the character with this ability may use the ability’s effect.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability6.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>You have 1 permanent Barell.</p>
+                    <p><strong>Restriction:</strong> May only be used during
+                        Rounds 1-2. Only the character with this ability
+                        may use the ability's effect.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability7.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Any Sword you have counts as 2 Swords.</p>
+                    <p><strong>Restriction:</strong> May only be used during
+                        Rounds 1-3. Only the character with this ability may use the ability's effect.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability8.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>If the active character autofails a skill check, you may spend 1 Barell to ignore this and continue to the next step of the skill check instead.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability9.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>At any point during either player’s turn, you may spend 2 "Any Resource" to switch who the active player is. The new active player completes the current turn where the previous player left off, and then the next player starts their turn as normal. (If playing solo, switch which character is currently active that turn.)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability10.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 "Any Resource" to flip the Empire Card over from the
+                        <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> to the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability11.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Take any amount of stored Resource cards from your Empire for no cost. </p>
+                    <p><strong>Restriction:</strong> May only be used if the Empire card is on the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side. Only the character with this ability may take the cards.</p>
+
+                </td>
+            </tr>
+        </table>
+        <h6>Empire Abilities</h6>
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>For each Cannon spent the active player gains +2 to a single Skill Check. You may use this after either player performs a skill check</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Gem to flip the Empire Card over from the <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> to the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Cannon to ignore the current Crisis Effect. This may be used before any triggered Crisis is applied. Note that the effect will trigger again next turn if the active scene doesn’t change.</p>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 

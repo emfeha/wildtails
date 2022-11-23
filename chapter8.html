@@ -19,14 +19,18 @@
     <div class="row">
         <div class="col-12 col-sm-10 col-md-11 col-lg-8 mx-auto">
             <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                <div class="container-fluid pe-0">
+                    <a class="navbar-brand me-auto" href="index.html">
                         <img src="img/wildtails-logo-text.png" alt="Wildtails" height="24"
                              class="d-inline-block align-text-top">
                     </a>
-                    <button class="btn px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#referenceMenu"
+                            aria-controls="referenceMenu">
+                        <i class="icon i-help"></i>
+                    </button>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
                             aria-controls="offcanvasMenu">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="icon i-bars"></i>
                     </button>
                 </div>
             </nav>
@@ -37,14 +41,19 @@
                 <div class="card-body px-5 pt-0">
                     <h5 class="card-subtitle mt-2">Chapter 8</h5>
                     <h1 class="card-title">Britain Attacks</h1>
-                    <p class="lead">Your British agent, Rebecca Alston, meets you at the dock of your hideout. Her face is grim as she speaks.</p>
-                    <p class="lead mb-4">“I’ve just received word that the lousy Jean Lafayette has lined up most of Ratuga Bay alongside the Americans to defend New L’Oreans. We need your ships to break through their defenses. If you side with us, I can promise a full pardon…and legal control of Ratuga Bay so long as the British rule. Do we have a deal?”</p>
+                    <p class="lead">Your British agent, Rebecca Alston, meets you at the dock of your hideout. Her face
+                        is grim as she speaks.</p>
+                    <p class="lead mb-4">“I’ve just received word that the lousy Jean Lafayette has lined up most of
+                        Ratuga Bay alongside the Americans to defend New L’Oreans. We need your ships to break through
+                        their defenses. If you side with us, I can promise a full pardon…and legal control of Ratuga Bay
+                        so long as the British rule. Do we have a deal?”</p>
                     <div class="option1 option2 collapse show">
                         <p><strong>Read both options, then choose one:</strong></p>
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-body">
-                                    <p>Heed Marcus Gladwell’s advice: Ally with the Americans, defend your homeland, and figure out how to deal with Jean Lafayette after.</p>
+                                    <p>Heed Marcus Gladwell’s advice: Ally with the Americans, defend your homeland, and
+                                        figure out how to deal with Jean Lafayette after.</p>
                                     <div class="text-center">
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                                                 data-bs-target=".option1" aria-expanded="false" aria-controls="option1">
@@ -55,7 +64,8 @@
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <p>Accept Rebecca Alston’s offer: Ally with the British in hopes of defeating Jean Lafayette now and controlling Ratuga Bay.</p>
+                                    <p>Accept Rebecca Alston’s offer: Ally with the British in hopes of defeating Jean
+                                        Lafayette now and controlling Ratuga Bay.</p>
                                     <div class="text-center">
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                                                 data-bs-target=".option2" aria-expanded="false" aria-controls="option2">
@@ -153,14 +163,16 @@
                     </button>
 
 
-                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#defeatsModal">
-                            Defeat
-                        </button>
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#defeatsModal">
+                        Defeat
+                    </button>
                 </div>
                 <div class="card-body collapse option1a px-5 pt-0">
                     <h3>America Holds Strong</h3>
-                    <p>The British ships bombard the American defenses, but as your side returns fire it's clear that the British were not expecting such a determined resistance. Under your lead, scores of pirate ships surge ahead to push the British back from New L'Oreans.</p>
+                    <p>The British ships bombard the American defenses, but as your side returns fire it's clear that
+                        the British were not expecting such a determined resistance. Under your lead, scores of pirate
+                        ships surge ahead to push the British back from New L'Oreans.</p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Update Campaign Log</h4>
                     <p>Fill in the dot for Scenario 8</p>
@@ -170,18 +182,26 @@
                     <ul class="list-group">
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Threat</h5>
-                            <p>You have a new Threat. From the sleeve, take out and unlock the <strong>JEAN LAFAYETTE</strong> card.</p>
-                            <img src="img/threat5.png" alt="Threat 5" class="img-fluid"  width="220"/>
+                            <p>You have a new Threat. From the sleeve, take out and unlock the <span
+                                    class="text-nowrap"><i
+                                    class="icon i-threat"></i><strong>JEAN LAFAYETTE</strong></span> card.</p>
+                            <img src="img/threat5.png" alt="Threat 5" class="img-fluid mb-2" width="220"/>
+                            <p><small><em><strong>Note:</strong> If you plan to use a Refresh Pack to return the game
+                                back to its original state, you may choose to not fill in this specific lock icon fully,
+                                or not mark it in at all and remember that this is unlocked instead.</em></small></p>
                         </li>
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Curse</h5>
-                            <p>You have a new curse icon. Place sticker <span class="badge badge-j">J1</span> on the Pirate’s Log <span class="badge badge-j">J</span> slot.</p>
-                            <img src="img/S2-J1.png" alt="J" class="img-fluid"  width="150"/>
+                            <p>You have a new curse icon. Place sticker <span class="badge badge-j">J1</span> on the
+                                <strong>PIRATE'S LOG</strong> <span class="badge badge-j">J</span> slot.</p>
+                            <img src="img/S2-J1.png" alt="J" class="img-fluid" width="150"/>
                         </li>
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Ally</h5>
-                            <p>You have a new ally; America. Place sticker <span class="badge badge-i">ɪ1</span> on the <span class="badge badge-i">ɪ</span> slot of your <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span>.</p>
-                            <img src="img/S2-I.png" alt="I" class="img-fluid"  width="150"/>
+                            <p>You have a new ally; America. Place sticker <span class="badge badge-i">ɪ1</span> on the
+                                <span class="badge badge-i">ɪ</span> slot of your <span class="text-nowrap"><i
+                                        class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span>.</p>
+                            <img src="img/S2-I.png" alt="I" class="img-fluid" width="150"/>
                         </li>
                     </ul>
                     <div class="text-center pt-4">
@@ -201,14 +221,15 @@
                     <button class="btn btn-lg btn-primary" type="button" data-bs-toggle="collapse"
                             data-bs-target=".option2a" aria-expanded="false" aria-controls="option2a">Victory
                     </button>
-                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#defeatsModal">
-                            Defeat
-                        </button>
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#defeatsModal">
+                        Defeat
+                    </button>
                 </div>
                 <div class="card-body collapse option2a px-5 pt-0">
                     <h3>Britain Presses the Attack</h3>
-                    <p>Even with the pirates' help, the American defenses are no match for the mighty British navy. You lead your fleet through the hail of cannon fire to begin pressing the attack.
+                    <p>Even with the pirates' help, the American defenses are no match for the mighty British navy. You
+                        lead your fleet through the hail of cannon fire to begin pressing the attack.
                     </p>
                     <hr class="border border-secondary border-2 opacity-50">
                     <h4>Update Campaign Log</h4>
@@ -219,18 +240,26 @@
                     <ul class="list-group">
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Threat</h5>
-                            <p>You have a new Threat. From the sleeve, take out and unlock the <strong>JEAN LAFAYETTE</strong> card.</p>
-                            <img src="img/threat5.png" alt="Threat 5" class="img-fluid"  width="220"/>
+                            <p>You have a new Threat. From the sleeve, take out and unlock the <span
+                                    class="text-nowrap"><i
+                                    class="icon i-threat"></i><strong>JEAN LAFAYETTE</strong></span> card.</p>
+                            <img src="img/threat5.png" alt="Threat 5" class="img-fluid mb-2" width="220"/>
+                            <p><small><em><strong>Note:</strong> If you plan to use a Refresh Pack to return the game
+                                back to its original state, you may choose to not fill in this specific lock icon fully,
+                                or not mark it in at all and remember that this is unlocked instead.</em></small></p>
                         </li>
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Curse</h5>
-                            <p>You have a new curse icon. Place sticker <span class="badge badge-j">J1</span> on the Pirate’s Log <span class="badge badge-j">J</span> slot.</p>
-                            <img src="img/S2-J1.png" alt="J" class="img-fluid"  width="150"/>
+                            <p>You have a new curse icon. Place sticker <span class="badge badge-j">J1</span> on the
+                                <strong>PIRATE'S LOG</strong> <span class="badge badge-j">J</span> slot.</p>
+                            <img src="img/S2-J1.png" alt="J" class="img-fluid" width="150"/>
                         </li>
                         <li class="list-group-item">
                             <h5><i class="icon i-check mt-1"></i> New Ally</h5>
-                            <p>You have a new ally; Britain. Place sticker <span class="badge badge-i">ɪ2</span> on the <span class="badge badge-i">ɪ</span> slot of your <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span>.</p>
-                            <img src="img/S2-I.png" alt="I" class="img-fluid"  width="150"/>
+                            <p>You have a new ally; Britain. Place sticker <span class="badge badge-i">ɪ2</span> on the
+                                <span class="badge badge-i">ɪ</span> slot of your <span class="text-nowrap"><i
+                                        class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span>.</p>
+                            <img src="img/S2-I.png" alt="I" class="img-fluid" width="150"/>
                         </li>
                     </ul>
                     <div class="text-center pt-4">
@@ -260,17 +289,169 @@
     </div>
     <div>
         <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="prologue.html">Prologue: 1813</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter1.html">Chapter 1: Rauga Bay Hideout</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter2.html">Chapter 2: Smuggling Routes</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter3.html">Chapter 3: Golden Opportunity</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter4.html">Chapter 4: Through the Blockade</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter5.html">Chapter 5: Gnaw's Forces</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter6.html">Chapter 6: British Espionage</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter7.html">Chapter 7: Pierre's Wrath</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="prologue.html">Prologue:
+                1813</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter1.html">Chapter 1: Rauga
+                Bay Hideout</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter2.html">Chapter 2:
+                Smuggling Routes</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter3.html">Chapter 3:
+                Golden Opportunity</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter4.html">Chapter 4:
+                Through the Blockade</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter5.html">Chapter 5:
+                Gnaw's Forces</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter6.html">Chapter 6:
+                British Espionage</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter7.html">Chapter 7:
+                Pierre's Wrath</a>
             <a class="list-group-item list-group-item-action active" href="chapter8.html">Chapter 8: Britain Attacks</a>
-            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter9.html">Chapter 9: Lords of Ratuga Bay</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter9.html">Chapter 9: Lords
+                of Ratuga Bay</a>
         </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="referenceMenu" aria-labelledby="referenceLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="referenceLabel">Ability Reference</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pb-0">
+        <h6>Character Abilities</h6>
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Any Resource to take any amount of stored Resource cards from your Empire.</p>
+                    <p><strong>Restriction:</strong> Only the player who uses this ability may take the cards.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability2.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Coin to give the active player +2 to a skill check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 1 per turn.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability3.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Sword to give the active player +2 to a skill check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 1 per turn.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability4.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>For each "Any Resource" spent the active player gains +1 to a single Skill Check. You may use this after either player performs a skill check.</p>
+                    <p><strong>Restriction:</strong> Max 2 per turn.</small></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability5.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Each Coin you have may be spent as a Gem.</p>
+                    <p><strong>Restriction:</strong> May only be used during Rounds 1-2. Only the character with this ability may use the ability’s effect.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability6.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>You have 1 permanent Barell.</p>
+                    <p><strong>Restriction:</strong> May only be used during
+                        Rounds 1-2. Only the character with this ability
+                        may use the ability's effect.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability7.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Any Sword you have counts as 2 Swords.</p>
+                    <p><strong>Restriction:</strong> May only be used during
+                        Rounds 1-3. Only the character with this ability may use the ability's effect.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability8.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>If the active character autofails a skill check, you may spend 1 Barell to ignore this and continue to the next step of the skill check instead.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability9.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>At any point during either player’s turn, you may spend 2 "Any Resource" to switch who the active player is. The new active player completes the current turn where the previous player left off, and then the next player starts their turn as normal. (If playing solo, switch which character is currently active that turn.)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability10.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 "Any Resource" to flip the Empire Card over from the
+                        <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> to the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability11.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Take any amount of stored Resource cards from your Empire for no cost. </p>
+                    <p><strong>Restriction:</strong> May only be used if the Empire card is on the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side. Only the character with this ability may take the cards.</p>
+
+                </td>
+            </tr>
+        </table>
+        <h6>Empire Abilities</h6>
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>For each Cannon spent the active player gains +2 to a single Skill Check. You may use this after either player performs a skill check</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Gem to flip the Empire Card over from the <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>STRONGHOLD</strong></span> to the <span class="text-nowrap"><i class="icon i-fleet"></i><strong>FLEET</strong></span> side.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/abilities/characterability1.png" alt="Character Ability" width="100">
+                </td>
+                <td>
+                    <p>Spend 1 Cannon to ignore the current Crisis Effect. This may be used before any triggered Crisis is applied. Note that the effect will trigger again next turn if the active scene doesn’t change.</p>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 <div class="modal fade" id="defeatsModal" tabindex="-1" aria-labelledby="defeatsModalLabel" aria-hidden="true">
@@ -282,7 +463,14 @@
             </div>
             <div class="modal-body">
                 <p>Log your defeat, then try again!</p>
-                <img src="img/Defeats8-9.png" alt="Defeats: 8-9" class="img-fluid"/>
+                <p class="text-center">
+                    <img src="img/Defeats8-9.png" alt="Defeats: 8-9" class="img-fluid"/>
+                </p>
+                <h5>Need help?</h5>
+                <p>Being a successful pirate is difficult. Growing a pirate empire is even harder. Here are some helpful tips to consider.</p>
+                <p><strong>Be Efficient:</strong> When spending resources, try to not waste any that are grouped together if possible. REMEMBER! If either player spends a resource from a card, any unspent resources on that card may still be used until the end of the turn.</p>
+                <p><strong>Don’t Hoard Resources:</strong> Hoarding too many Resource cards that you can’t use will be a quick way to lose the game. The more Resource cards you hold onto, the fewer will get reshuffled back into the deck, which in turn makes for shorter rounds.</p>
+                <p><strong>Achieve Objectives Quickly:</strong> Focus as a team to achieve Objective milestones as soon as possible. Objective rewards can be very powerful and give you more options early on.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Retry Scenario</button>
