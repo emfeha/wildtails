@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wildtails Atlas">
+    <meta name="author" content="Button Shy">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Wildtails Final Score</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+
+</head>
+<body>
+<main class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid pe-0">
+                    <a class="navbar-brand me-auto" href="index.html">
+                        <img src="img/wildtails-logo-text.png" alt="Wildtails" height="24"
+                             class="d-inline-block align-text-top">
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                            aria-controls="offcanvasMenu">
+                        <i class="icon i-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12">
+            <div class="card card-main mb-4">
+                <div class="card-header"></div>
+                <div class="card-body px-5 pt-0">
+                    <h1 class="card-title">Endwertung der Kampagne</h1>
+                    <p class="lead">Herzlichen Glückwunsch zum Abschluss dieser Kampagne! Tragt nun eure Niederlagen und die Wahl eurer Verbündeten ein, um eure abschließende Punktzahl zu berechnen. Ihr könnt euch außerdem ein Bild eurer Festung herunterladen und es als Trophäe benutzen und vor euren Piratenfreunden damit angeben.</p>
+                    <p>Nutzt den folgenden <a href="" data-bs-toggle="modal" data-bs-target="#scoringModal"><strong>Leitfaden</strong></a>, um eure finale Punktewertung zu errechnen.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-7 mb-4">
+                            <div id="canvas" class="position-relative">
+                                <div class="score px-4 pb-3 position-absolute bottom-0 start-0 d-none" style="z-index: 100">
+                                    <small class="mb-0">Score</small><br>
+                                    <small class="value mb-0">-</small>
+                                </div>
+                                <img src="img/scoring.png" alt="Stronghold" class="img-fluid position-relative">
+                                <img src="img/wildtails-logo.png" alt="Wildtails" class="img-fluid position-absolute logo d-none">
+                                <img src="img/d1.png" alt="Dock"
+                                     class="img-fluid position-absolute d-none dock dock-a">
+                                <img src="img/d2.png" alt="Dock"
+                                     class="img-fluid position-absolute d-none dock dock-b">
+                                <img src="img/d3.png" alt="Dock"
+                                     class="img-fluid position-absolute d-none dock dock-c">
+                                <img src="img/h1.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-a">
+                                <img src="img/h2.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-b">
+                                <img src="img/h3.png" alt="Warehouse"
+                                     class="img-fluid position-absolute d-none warehouse warehouse-c">
+                                <img src="img/f1.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-a">
+                                <img src="img/f2.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-b">
+                                <img src="img/f3.png" alt="Tavern"
+                                     class="img-fluid position-absolute d-none tavern tavern-c">
+                                <img src="img/k1.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-a">
+                                <img src="img/k2.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-b">
+                                <img src="img/k3.png" alt="Tower"
+                                     class="img-fluid position-absolute d-none tower tower-c">
+                                <img src="img/i1.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-a">
+                                <img src="img/i2.png" alt="Flag" class="img-fluid position-absolute d-none flag flag-b">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="accordion mb-4" id="accordionScoring">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Scenario 1-3 Niederlagen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check defeats" name="dock" id="dock-a" autocomplete="off" data-id="dock-a" data-score="5">
+                                                <label class="btn btn-outline-primary" for="dock-a">0-1</label>
+
+                                                <input type="radio" class="btn-check defeats" name="dock" id="dock-b" autocomplete="off" data-id="dock-b" data-score="4">
+                                                <label class="btn btn-outline-primary" for="dock-b">2</label>
+
+                                                <input type="radio" class="btn-check defeats" name="dock" id="dock-c" autocomplete="off" data-id="dock-c" data-score="3">
+                                                <label class="btn btn-outline-primary" for="dock-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Scenario 4-5 Niederlagen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check defeats" name="tavern" id="tavern-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="tavern-a">0-1</label>
+
+                                                <input type="radio" class="btn-check defeats" name="tavern" id="tavern-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="tavern-b">2</label>
+
+                                                <input type="radio" class="btn-check defeats" name="tavern" id="tavern-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="tavern-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Scenario 6-7 Niederlagen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check defeats" name="warehouse" id="warehouse-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="warehouse-a">0-1</label>
+
+                                                <input type="radio" class="btn-check defeats" name="warehouse" id="warehouse-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="warehouse-b">2</label>
+
+                                                <input type="radio" class="btn-check defeats" name="warehouse" id="warehouse-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="warehouse-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Scenario 8-9 Niederlagen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check defeats" name="tower" id="tower-a" autocomplete="off" data-score="5">
+                                                <label class="btn btn-outline-primary" for="tower-a">0-1</label>
+
+                                                <input type="radio" class="btn-check defeats" name="tower" id="tower-b" autocomplete="off" data-score="4">
+                                                <label class="btn btn-outline-primary" for="tower-b">2</label>
+
+                                                <input type="radio" class="btn-check defeats" name="tower" id="tower-c" autocomplete="off" data-score="3">
+                                                <label class="btn btn-outline-primary" for="tower-c">3+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Wähle deinen Verbündeten
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check defeats" name="flag" id="flag-a" autocomplete="off" data-score="0">
+                                                <label class="btn btn-outline-primary" for="flag-a">America</label>
+
+                                                <input type="radio" class="btn-check defeats" name="flag" id="flag-b" autocomplete="off" data-score="0">
+                                                <label class="btn btn-outline-primary" for="flag-b">Britain</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Logo anzeigen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check toggle-asset" name="logo" id="logo-a" autocomplete="off" data-class="d-block">
+                                                <label class="btn btn-outline-primary" for="logo-a">Yes</label>
+
+                                                <input type="radio" class="btn-check toggle-asset" name="logo" id="logo-b" autocomplete="off" data-class="d-none" checked>
+                                                <label class="btn btn-outline-primary" for="logo-b">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Punkte anzeigen
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionScoring">
+                                        <div class="accordion-body">
+
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check toggle-asset" name="score" id="score-a" autocomplete="off" data-class="d-block">
+                                                <label class="btn btn-outline-primary" for="score-a">Yes</label>
+
+                                                <input type="radio" class="btn-check toggle-asset" name="score" id="score-b" autocomplete="off" data-class="d-none" checked>
+                                                <label class="btn btn-outline-primary" for="score-b">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button id="download" class="btn btn-lg btn-primary">Download</button>
+                                <a href="scoring.html" class="btn btn-lg btn-outline-secondary">Zurücksetzen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="offcanvas text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-dark list-group-item-action" href="index.html">Home</a>
+        <a class="list-group-item list-group-item-dark list-group-item-action" href="rules.html">Campaign Rules</a>
+    <a class="list-group-item list-group-item-action list-group-item-danger" href="errata.html">Errata <em>(Updated: Dec. 20th, 2022)</em></a>
+    </div>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Campaign</h5>
+    </div>
+    <div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="prologue.html">Prologue: 1813</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter1.html">Chapter 1: Ratuga Bay
+                Hideout</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter2.html">Kapitel 2: Die Routen der Schmuggler</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter3.html">Kapitel 3: Eine goldene Gelegenheit</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter4.html">Kapitel 4: Through the
+                Blockade</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter5.html">Kapitel 5: Kommodore Knabbers Streitkräfte</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter6.html">Kapitel 6: Britische Spionage</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter7.html">Kapitel 7: Pierres Zorn</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter8.html">Kapitel 8: Die Briten greifen an</a>
+            <a class="list-group-item list-group-item-dark list-group-item-action" href="chapter9.html">Kapitel 9: Herrschaft über die Rattuga Bucht</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="scoringModal" tabindex="-1" aria-labelledby="scoringModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Punktewertung</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Rechnet eure Punkte abhängig von den <span class="text-nowrap"><i class="icon i-stronghold"></i><strong>Flaggen</strong></span> eurer [Symbol Stronghold] Festung aus:
+                </p>
+                <table class="table">
+                    <tr>
+                        <td class="text-center">
+                            <img src="img/banner-black.png" alt="Black Banner with a Skull" class="img-fluid">
+                            <p><strong>je 5 Punkte</strong></p></td>
+                        <td class="text-center">
+                            <img src="img/banner-red.png" alt="Red Banner with a Sword" class="img-fluid">
+                            <p><strong>je 4 Punkte</strong></p></td>
+                        <td class="text-center">
+                            <img src="img/banner-white.png" alt="White Banner with a Rat's Tail" class="img-fluid">
+                            <p><strong>je 3 Punkte</strong></p></td>
+                    </tr>
+                </table>
+                <p>Tragt eure Gesamtpunktzahl in das entsprechende Feld des <strong>Kampagnenlogbuchs</strong> ein. Schaut dann in der <strong>Punktetabelle</strong> darunter nach, welchen Rang ihr in dieser Kampagne erreichen konntet.</p>
+                <div class="text-center">
+                    <img src="img/CampaignLogFinalScoring.png" alt="Campaign Log" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
