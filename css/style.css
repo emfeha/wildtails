@@ -1,62 +1,62 @@
 
-body {
-    background: url("../img/bg.jpeg") no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+/*body {*/
+/*    background: url("../img/bg.jpeg") no-repeat;*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
 
-.card-main {
-    --bs-card-bg: none;
-    --bs-card-border-color: none;
-}
+/*.card-main {*/
+/*    --bs-card-bg: none;*/
+/*    --bs-card-border-color: none;*/
+/*}*/
 
-.hero,
-.card-main > .card-body,
-.card-main .list-group-flush {
-    --bs-card-border-color: none;
-    background: url("../img/bg-paper.png") repeat-y center top;
-    background-size: 100% auto;
-}
+/*.hero,*/
+/*.card-main > .card-body,*/
+/*.card-main .list-group-flush {*/
+/*    --bs-card-border-color: none;*/
+/*    background: url("../img/bg-paper.png") repeat-y center top;*/
+/*    background-size: 100% auto;*/
+/*}*/
 
-.card-main > .card-header {
-    background: url("../img/bg-paper-top.png") no-repeat center top;
-    background-size: 100% auto;
-    border: none;
-    min-height: 40px;
-}
+/*.card-main > .card-header {*/
+/*    background: url("../img/bg-paper-top.png") no-repeat center top;*/
+/*    background-size: 100% auto;*/
+/*    border: none;*/
+/*    min-height: 40px;*/
+/*}*/
 
-.card-main > .card-footer {
-    background: url("../img/bg-paper-bottom.png") no-repeat center bottom;
-    background-size: 100% auto;
-    border: none;
-    min-height: 40px;
-}
-.card-main .list-group,
-.card-main .card,
-.card-main .accordion-item,
-.modal-content {
-    --bs-modal-bg: #f3ede2;
-    --bs-card-bg: #f3ede2;
-    --bs-accordion-bg: #f3ede2;
-    --bs-accordion-border-color: #9b9393;
-    --bs-card-border-color: #9b9393;
-}
+/*.card-main > .card-footer {*/
+/*    background: url("../img/bg-paper-bottom.png") no-repeat center bottom;*/
+/*    background-size: 100% auto;*/
+/*    border: none;*/
+/*    min-height: 40px;*/
+/*}*/
+/*.card-main .list-group,*/
+/*.card-main .card,*/
+/*.card-main .accordion-item,*/
+/*.modal-content {*/
+/*    --bs-modal-bg: #f3ede2;*/
+/*    --bs-card-bg: #f3ede2;*/
+/*    --bs-accordion-bg: #f3ede2;*/
+/*    --bs-accordion-border-color: #9b9393;*/
+/*    --bs-card-border-color: #9b9393;*/
+/*}*/
 
-.accordion .accordion-button {
-    --bs-accordion-btn-bg: #f3ede2;
-    --bs-accordion-bg: #f3ede2;
-    --bs-accordion-active-bg: #e5dfd3;
-    --bs-accordion-active-color: #333;
-}
+/*.accordion .accordion-button {*/
+/*    --bs-accordion-btn-bg: #f3ede2;*/
+/*    --bs-accordion-bg: #f3ede2;*/
+/*    --bs-accordion-active-bg: #e5dfd3;*/
+/*    --bs-accordion-active-color: #333;*/
+/*}*/
 
-.card-main .card-body .list-group .list-group-item {
-    --bs-list-group-bg: #f3ede2;
-    --bs-list-group-border-color: #9b9393;
-}
+/*.card-main .card-body .list-group .list-group-item {*/
+/*    --bs-list-group-bg: #f3ede2;*/
+/*    --bs-list-group-border-color: #9b9393;*/
+/*}*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab';
-}
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    font-family: 'Roboto Slab';*/
+/*}*/
 
 .badge-a {
     background: #3f59ff;
