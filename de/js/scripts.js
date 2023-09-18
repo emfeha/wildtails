@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     function calcScore() {
         let total = 0,
-            rank = "Smuggler";
+            rank = "Landratte";
 
         $('input.defeats[type=radio]').each(function(){
             if($(this).prop('checked') === true) {
@@ -26,10 +26,10 @@ $(document).ready(function () {
         });
 
         if(total > 16)
-            rank = 'Pirate';
+            rank = 'Kapitän';
 
         if (total > 19)
-            rank = 'Legend';
+            rank = 'Legende';
 
         $('.score .value').text(rank + ' (' + total + ' points)');
     }
