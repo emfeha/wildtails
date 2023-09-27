@@ -31,7 +31,7 @@ $(document).ready(function () {
         if (total > 19)
             rank = 'Legende';
 
-        $('.score .value').text(rank + ' (' + total + ' punkte)');
+        $('.score .value').text(rank + ' (' + total + ' Punkte)');
     }
 
     $('#download').on('click', function () {
